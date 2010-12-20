@@ -10,7 +10,7 @@
     <%= stylesheet_link_tag 'common' %>
     <!--[if IE]><%= stylesheet_link_tag 'large', :media => "screen" %><![endif]--> <!-- IE is totally broken with CSS media queries -->
     <%= stylesheet_link_tag 'small', :media => "only screen and (max-width: 481px)" %>
-    <%= stylesheet_link_tag 'large', :media => "screen and (min-width: 482px)" %> 
+    <%= stylesheet_link_tag 'large', :media => "screen and (min-width: 482px)" %>
     <%= stylesheet_link_tag 'print', :media => "print" %>
     <%= tag("link", { :rel => "search", :type => "application/opensearchdescription+xml", :title => "OpenStreetMap Search", :href => "/opensearch/osm.xml" }) %>
     <%= tag("meta", { :name => "description", :content => "OpenStreetMap is the free wiki world map." }) %>
@@ -35,10 +35,9 @@
 
     <span id="greeting">
       <% if @user and @user.id %>
-        <span id="full-greeting"><%= t 'layouts.welcome_user', :user_link => (link_to h(@user.display_name), {:controller => 'user', :action => 'view', :display_name => @user.display_name}, :title => t('layouts.welcome_user_link_tooltip')) %></span> 
-        <span id="small-greeting"><%= link_to t('layouts.welcome_user_link_tooltip'), {:controller => 'user', :action => 'view', :display_name => @user.display_name} %></span> | 
+        <span id="full-greeting"><%= t 'layouts.welcome_user', :user_link => (link_to h(@user.display_name), {:controller => 'user', :action => 'view', :display_name => @user.display_name}, :title => t('layouts.welcome_user_link_tooltip')) %></span>
+        <span id="small-greeting"><%= link_to t('layouts.welcome_user_link_tooltip'), {:controller => 'user', :action => 'view', :display_name => @user.display_name} %></span> |
         <%= yield :greeting %>
-        <%= render :partial => "layouts/inbox" %> |
         <%= link_to t('layouts.logout'), {:controller => 'user', :action => 'logout', :session => request.session_options[:id], :referer => request.request_uri}, {:id => 'logoutanchor', :title => t('layouts.logout_tooltip'), :method => :post, :href => url_for(:controller => 'user', :action => 'logout', :referer => request.request_uri)}%>
       <% else %>
         <%= link_to t('layouts.log_in'), {:controller => 'user', :action => 'login', :referer => request.request_uri}, {:id => 'loginanchor', :title => t('layouts.log_in_tooltip')} %> |
@@ -54,9 +53,9 @@
         historyclass = ''
         exportclass = ''
         traceclass = ''
-        viewclass = 'active' if params['controller'] == 'site' and params['action'] == 'index' 
-        editclass = 'active' if params['controller'] == 'site' and params['action'] == 'edit' 
-        historyclass = 'active' if params['controller'] == 'changeset' and params['action'] == 'list' 
+        viewclass = 'active' if params['controller'] == 'site' and params['action'] == 'index'
+        editclass = 'active' if params['controller'] == 'site' and params['action'] == 'edit'
+        historyclass = 'active' if params['controller'] == 'changeset' and params['action'] == 'list'
         exportclass = 'active' if params['controller'] == 'site' and params['action'] == 'export'
         traceclass = 'active' if params['controller'] == 'trace'
         diaryclass = 'active' if params['controller'] == 'diary_entry'
@@ -105,8 +104,8 @@
           <%= t 'layouts.intro_2' %>
         </p>
         <p>
-        <%= t 'layouts.intro_3', 
-              :ucl => link_to(t('layouts.intro_3_ucl'), "http://www.vr.ucl.ac.uk"), 
+        <%= t 'layouts.intro_3',
+              :ucl => link_to(t('layouts.intro_3_ucl'), "http://www.vr.ucl.ac.uk"),
               :bytemark => link_to(t('layouts.intro_3_bytemark'), "http://www.bytemark.co.uk"),
               :partners => link_to(t('layouts.intro_3_partners'), t('layouts.intro_3_partners_url')) %>
         </p>

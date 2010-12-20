@@ -235,6 +235,11 @@ class UserController < ApplicationController
     elsif flash[:notice].nil?
       flash.now[:notice] =  t 'user.login.notice'
     end
+    if params[:layout] == 'slim'
+      render( :layout => 'slim' )
+    else
+      render
+    end
   end
 
   def logout
