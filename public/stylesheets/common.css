@@ -543,6 +543,16 @@ hr {
   text-align: left;
 }
 
+#slim_content {
+  margin: 10px;
+  position: absolute;
+  top: 65px;
+}
+
+#slim_header {
+  margin: 10px;
+}
+
 /* Rules for the changeset list shown by the history tab etc */
 
 #changeset_list, #keyvalue {
