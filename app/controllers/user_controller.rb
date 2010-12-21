@@ -165,9 +165,7 @@ class UserController < ApplicationController
       end
     end
     if params[:layout] == 'slim'
-      render( :layout => 'slim' )
-    else
-      render
+      render( :layout => 'slim' ) and return
     end
   end
 
@@ -242,9 +240,7 @@ class UserController < ApplicationController
     end
     if params[:layout] == 'slim'
       @url_additional_params = {:layout => :slim}
-      render( :layout => 'slim' )
-    else
-      render
+      render( :layout => 'slim' ) and return
     end
   end
 
