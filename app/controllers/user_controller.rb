@@ -203,6 +203,10 @@ class UserController < ApplicationController
     # The user is logged in already, so don't show them the signup
     # page, instead send them to the home page
     redirect_to :controller => 'site', :action => 'index' if session[:user]
+    if params[:layout] == 'slim'
+      @url_additional_params = {:layout => :slim}
+      render( :layout => 'slim' ) and return
+    end
   end
 
   def login
