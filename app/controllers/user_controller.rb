@@ -225,11 +225,11 @@ class UserController < ApplicationController
         # them to that unless they've also got a block on them, in
         # which case redirect them to the block so they can clear it.
         if user.blocked_on_view
-          redirect_to user.blocked_on_view, :referer => params[:referer]
+          redirect_to user.blocked_on_view, :referer => params[:referer] and return
         elsif params[:referer]
-          redirect_to params[:referer]
+          redirect_to params[:referer] and return
         else
-          redirect_to :controller => 'site', :action => 'index'
+          redirect_to :controller => 'site', :action => 'index' and return
         end
       elsif user = User.authenticate(:username => email_or_display_name, :password => pass, :pending => true)
         flash.now[:error] = t 'user.login.account not active', :reconfirm => url_for(:action => 'confirm_resend', :display_name => user.display_name)
