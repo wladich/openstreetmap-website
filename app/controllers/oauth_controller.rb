@@ -1,9 +1,9 @@
 class OauthController < ApplicationController
-  layout 'site'
+  layout 'slim'
 
   before_filter :authorize_web, :only => [:oauthorize, :revoke]
   before_filter :set_locale, :only => [:oauthorize, :revoke]
-  before_filter :require_user, :only => [:oauthorize]
+  before_filter :require_user_slim, :only => [:oauthorize]
   before_filter :verify_oauth_consumer_signature, :only => [:request_token]
   before_filter :verify_oauth_request_token, :only => [:access_token]
   # Uncomment the following if you are using restful_open_id_authentication

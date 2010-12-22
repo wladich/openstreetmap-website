@@ -25,8 +25,16 @@ class ApplicationController < ActionController::Base
     @user = nil
   end
 
-  def require_user
-    redirect_to :controller => 'user', :action => 'login', :referer => request.request_uri unless @user
+  def require_user(layout = nil)
+    if layout
+      redirect_to :controller => 'user', :action => 'login', :referer => request.request_uri , :layout => layout unless @user
+    else
+      redirect_to :controller => 'user', :action => 'login', :referer => request.request_uri unless @user
+    end
+  end
+
+  def require_user_slim
+    require_user('slim')
   end
 
   ##
