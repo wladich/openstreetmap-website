@@ -547,6 +547,7 @@ hr {
   margin: 10px;
   position: absolute;
   top: 65px;
+  max-width: 50em;
 }
 
 #slim_header {
