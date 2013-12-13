@@ -59,6 +59,8 @@ OpenStreetMap::Application.configure do
   # Use a different cache store in production.
   if defined?(MEMCACHE_SERVERS)
     config.cache_store = :mem_cache_store, MEMCACHE_SERVERS, { :namespace => "rails:cache" }
+  else
+    config.cache_store = :file_store, "/var/lib/osm"
   end
 
   # Configure caching of static assets
