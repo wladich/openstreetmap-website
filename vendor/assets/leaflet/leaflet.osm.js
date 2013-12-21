@@ -14,20 +14,23 @@ L.OSM.TileLayer = L.TileLayer.extend({
 
 L.OSM.Mapnik = L.OSM.TileLayer.extend({
   options: {
-    url: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-    maxZoom: 19
+    url: 'http://tiles.osm.wladich.tk/default/{z}/{x}/{y}.png',
+    maxZoom: 15
   }
 });
 
 L.OSM.CycleMap = L.OSM.TileLayer.extend({
   options: {
-    url: 'http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png'
+    url: 'http://tiles.wladich.tk/map_podm/{z}/{x}/{y}.png',
+    tms: true,
+    maxZoom: 14
   }
 });
 
 L.OSM.TransportMap = L.OSM.TileLayer.extend({
   options: {
-    url: 'http://{s}.tile2.opencyclemap.org/transport/{z}/{x}/{y}.png'
+    url: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+    maxZoom: 19
   }
 });
 

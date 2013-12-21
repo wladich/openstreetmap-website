@@ -2055,8 +2055,8 @@ en:
         popup: You are within {distance} {unit} of this point
       base:
         standard: Standard
-        cycle_map: Cycle Map
-        transport_map: Transport Map
+        cycle_map: Original Slazav map
+        transport_map: Standard OSM Map
         mapquest: MapQuest Open
         hot: Humanitarian
       layers:
