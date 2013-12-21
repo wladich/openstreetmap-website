@@ -1,0 +1,24 @@
+#!/bin/bash
+datestr=`date -Iseconds`
+dump_name=osm_dump_without_geodata-${datestr//:/.}
+su postgres -c "pg_dump -U postgres osm -Fc --data-only\
+ -t acls\
+ -t client_applications\
+ -t diary_comments\
+ -t diary_entries\
+ -t friends\
+ -t gps_points\
+ -t gpx_file_tags\
+ -t gpx_files\
+ -t messages\
+ -t note_comments\
+ -t notes\
+ -t oauth_nonces\
+ -t oauth_tokens\
+ -t redactions\
+ -t user_blocks\
+ -t user_preferences\
+ -t user_roles\
+ -t user_tokens\
+ -t users" > $dump_name
+

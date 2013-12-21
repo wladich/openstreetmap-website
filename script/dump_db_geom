@@ -1,0 +1,23 @@
+#!/bin/bash
+datestr=`date -Iseconds`
+dump_name=osm_dump_geodata-${datestr//:/.}
+su postgres -c "pg_dump -U postgres osm -Fc --data-only\
+ -t changeset_tags\
+ -t changesets\
+ -t current_node_tags\
+ -t current_nodes\
+ -t current_relation_members\
+ -t current_relation_tags\
+ -t current_relations\
+ -t current_way_nodes\
+ -t current_way_tags\
+ -t current_ways\
+ -t node_tags\
+ -t nodes\
+ -t relation_members\
+ -t relation_tags\
+ -t relations\
+ -t way_nodes\
+ -t way_tags\
+ -t ways" > $dump_name
+
