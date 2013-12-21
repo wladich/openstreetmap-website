@@ -1,0 +1,13 @@
+<featureGroup>
+  <feature name="Basin">
+    <category>water</category>
+    <icon image="features/waterway__lake.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <area/>
+    <tag k="landcover" v="water"/>
+    <inputSet ref="simpleName"/>
+  </feature>
+</featureGroup>
