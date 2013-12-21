@@ -1,3 +1,5 @@
+way [landcover=water] :area          { color: #3434ff;    width: 2; fill-color: #3434ff;    fill-opacity: 0.2; set .area_small_name;}
+
 /* Landuse */
 
 way[natural] :area                          { color: #ADD6A5; width: 1; fill-color: #ADD6A5; fill-opacity: 0.2; }

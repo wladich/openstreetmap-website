@@ -1,4 +1,11 @@
 
+way[relief] {color: brown}
+way[relief=contour] { 
+    width: 1;
+    linecap: round; casing-linecap: round;
+    text: height; text-color: brown; font-size: 10; text-position: offset; text-offset: 8; 
+    }
+
 /* Roads */
 
 way[highway=motorway],way[highway=motorway_link],
