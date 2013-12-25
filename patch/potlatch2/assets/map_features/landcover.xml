@@ -1,6 +1,6 @@
 <featureGroup>
   <feature name="Basin">
-    <category>water</category>
+    <category>areas</category>
     <icon image="features/waterway__lake.png">
       <font size="14pt">
         <b>${name}</b>
@@ -9,5 +9,118 @@
     <area/>
     <tag k="landcover" v="water"/>
     <inputSet ref="simpleName"/>
+    <inputSet ref="common"/>
   </feature>
+
+  <feature name="Forest">
+    <category>areas</category>
+    <icon image="features/waterway__lake.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <area/>
+    <tag k="landcover" v="forest"/>
+    <inputSet ref="common"/>
+  </feature>
+
+  <feature name="Sparse forest">
+    <category>areas</category>
+    <icon image="features/waterway__lake.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <area/>
+    <tag k="landcover" v="sparse"/>
+    <inputSet ref="common"/>
+  </feature>
+
+  <feature name="New felling">
+    <category>areas</category>
+    <icon image="features/waterway__lake.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <area/>
+    <tag k="landcover" v="felling"/>
+    <inputSet ref="common"/>
+  </feature>
+
+    <feature name="Old felling">
+    <category>areas</category>
+    <icon image="features/waterway__lake.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <area/>
+    <tag k="landcover" v="felling_overgrown"/>
+    <inputSet ref="common"/>
+  </feature>
+
+  <feature name="Town">
+    <category>areas</category>
+    <icon image="features/waterway__lake.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <area/>
+    <tag k="landcover" v="urban"/>
+    <inputSet ref="common"/>
+  </feature>
+
+    <feature name="Village">
+    <category>areas</category>
+    <icon image="features/waterway__lake.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <area/>
+    <tag k="landcover" v="rural"/>
+    <inputSet ref="common"/>
+  </feature>
+
+  <feature name="Cottages">
+    <category>areas</category>
+    <icon image="features/waterway__lake.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <area/>
+    <tag k="landcover" v="cottage"/>
+    <inputSet ref="common"/>
+  </feature>
+
+  <feature name="Cemetry">
+    <category>areas</category>
+    <icon image="features/waterway__lake.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <area/>
+    <tag k="landcover" v="cemetry"/>
+    <inputSet ref="common"/>
+  </feature>
+
+  <feature name="Resrtricted area">
+    <category>areas</category>
+    <icon image="features/waterway__lake.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <area/>
+    <tag k="landcover" v="restricted"/>
+    <inputSet ref="common"/>
+  </feature>
+
+
+
+
 </featureGroup>

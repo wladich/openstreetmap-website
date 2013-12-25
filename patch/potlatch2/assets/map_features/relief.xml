@@ -7,10 +7,10 @@
         <b>${name}</b>
       </font>
     </icon>
-
     <line/>
     <input type="freetext" presence="always" name="Height" key="height" description="Elevation" />
     <tag k="relief" v="contour"/>
+    <inputSet ref="common"/>
   </feature>
 
 </featureGroup>

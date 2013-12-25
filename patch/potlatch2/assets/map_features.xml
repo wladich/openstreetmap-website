@@ -7,9 +7,11 @@
 <mapFeatures>
 
   <!-- Categories -->
+  <category name="Rivers" id="rivers"/>
+  <category name="Areas" id="areas"/>
+  <category name="Roads" id="roads"/> 
+  <category name="Points" id="points"/>  
   <category name="Relief" id="relief"/>
-  <category name="Water" id="water"/>
-
 <!-- Features -->
 
   <include file="map_features/relief.xml" />
@@ -26,6 +28,18 @@
  
   <inputSet id="simpleName">
     <input type="freetext" presence="always" name="Name" key="name" description="The name" priority="highest"/>
+  </inputSet>
+
+  <inputSet id="source">
+    <input type="choice" presence="always" name="Source" key="source" description="The primary source of information for this object (GPS, survey, Bing, ...)" priority="lowest">
+        <choice value="milmap" text="Genshatb map"/>
+        <choice value="satellite" text="High resolution satellite"/>
+        <choice value="track" text="GPS track"/>
+    </input>
+  </inputSet>
+
+  <inputSet id="common">
+    <inputSet ref="source"/>
   </inputSet>
 
 </mapFeatures>
