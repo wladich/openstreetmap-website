@@ -94,6 +94,7 @@
     <area/>
     <tag k="landcover" v="cottage"/>
     <inputSet ref="common"/>
+    <inputSet ref="simpleName"/>
   </feature>
 
   <feature name="Cemetry">
@@ -118,8 +119,36 @@
     <area/>
     <tag k="landcover" v="restricted"/>
     <inputSet ref="common"/>
+    <inputSet ref="simpleName"/>
   </feature>
 
+
+  <feature name="Swamp">
+    <category>areas</category>
+    <icon image="features/waterway__lake.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <area/>
+    <tag k="swamp" v="swamp"/>
+    <inputSet ref="common"/>
+    <inputSet ref="simpleName"/>
+    <input type="checkbox" presence="onTagMatch" name="Converted from line drawing" key="converted_from_lines" priority="lowest" />
+  </feature>
+
+  <feature name="Deep swamp">
+    <category>areas</category>
+    <icon image="features/waterway__lake.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <area/>
+    <tag k="swamp" v="deep"/>
+    <inputSet ref="common"/>
+    <inputSet ref="simpleName"/>
+  </feature>
 
 
 
