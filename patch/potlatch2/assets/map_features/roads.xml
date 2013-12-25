@@ -1,0 +1,235 @@
+<featureGroup>
+  <feature name="Good dirt road">
+    <category>roads</category>
+    <description>Contour line.</description>
+    <icon image="features/waterway__stream.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <line/>
+    <tag k="road" v="dirt"/>
+    <tag k="drive" v="yes"/>
+    <inputSet ref="common"/>
+    <inputSet ref="passability"/>
+  </feature>
+
+  <feature name="Bad dirt road">
+    <category>roads</category>
+    <description>Contour line.</description>
+    <icon image="features/waterway__stream.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <line/>
+    <tag k="road" v="dirt"/>
+    <inputSet ref="common"/>
+    <inputSet ref="passability"/>
+  </feature>
+
+  <feature name="Good advanced road">
+    <category>roads</category>
+    <description>Contour line.</description>
+    <icon image="features/waterway__stream.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <line/>
+    <tag k="road" v="advanced"/>
+    <tag k="drive" v="yes"/>
+    <inputSet ref="common"/>
+    <inputSet ref="passability"/>
+  </feature>
+
+  <feature name="Bad advanced road">
+    <category>roads</category>
+    <description>Contour line.</description>
+    <icon image="features/waterway__stream.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <line/>
+    <tag k="road" v="advanced"/>
+    <inputSet ref="common"/>
+    <inputSet ref="passability"/>
+  </feature>
+
+  <feature name="Cutting">
+    <category>roads</category>
+    <description>Contour line.</description>
+    <icon image="features/waterway__stream.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <line/>
+    <tag k="road" v="cutting"/>
+    <inputSet ref="common"/>
+    <inputSet ref="passability"/>
+  </feature>
+
+ <feature name="Abandoned road">
+    <category>roads</category>
+    <description>Contour line.</description>
+    <icon image="features/waterway__stream.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <line/>
+    <tag k="road" v="abandoned"/>
+    <inputSet ref="common"/>
+    <inputSet ref="passability"/>
+  </feature>
+
+  <feature name="Foot path">
+    <category>roads</category>
+    <description>Contour line.</description>
+    <icon image="features/waterway__stream.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <line/>
+    <tag k="road" v="path"/>
+    <inputSet ref="common"/>
+    <inputSet ref="passability"/>
+  </feature>
+
+  <feature name="Fire trench">
+    <category>roads</category>
+    <description>Contour line.</description>
+    <icon image="features/waterway__stream.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <line/>
+    <tag k="road" v="trench"/>
+    <inputSet ref="common"/>
+    <inputSet ref="passability"/>
+  </feature>
+
+  <feature name="Wall">
+    <category>roads</category>
+    <description>Contour line.</description>
+    <icon image="features/waterway__stream.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <line/>
+    <tag k="road" v="wall"/>
+    <inputSet ref="common"/>
+    <inputSet ref="passability"/>
+  </feature>
+
+
+
+  <feature name="Highway">
+    <category>roads</category>
+    <description>Contour line.</description>
+    <icon image="features/waterway__stream.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <line/>
+    <tag k="road" v="highway"/>
+    <inputSet ref="common"/>
+  </feature>
+  
+  <feature name="Major road">
+    <category>roads</category>
+    <description>Contour line.</description>
+    <icon image="features/waterway__stream.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <line/>
+    <tag k="road" v="major"/>
+    <inputSet ref="common"/>
+  </feature>
+
+  <feature name="Asphalt road">
+    <category>roads</category>
+    <description>Contour line.</description>
+    <icon image="features/waterway__stream.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <line/>
+    <tag k="road" v="asphalt"/>
+    <inputSet ref="common"/>
+  </feature>
+
+  <feature name="Wide cutting">
+    <category>roads</category>
+    <description>Contour line.</description>
+    <icon image="features/waterway__stream.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <line/>
+    <tag k="road" v="cutting_wide"/>
+    <inputSet ref="common"/>
+  </feature>
+
+  <feature name="Railway">
+    <category>roads</category>
+    <description>Contour line.</description>
+    <icon image="features/waterway__stream.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <line/>
+    <tag k="road" v="railway"/>
+    <inputSet ref="common"/>
+  </feature>
+
+  <feature name="Gas line">
+    <category>roads</category>
+    <description>Contour line.</description>
+    <icon image="features/waterway__stream.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <line/>
+    <tag k="road" v="gasline"/>
+    <inputSet ref="common"/>
+  </feature>
+
+  <feature name="Big powerline">
+    <category>roads</category>
+    <description>Contour line.</description>
+    <icon image="features/waterway__stream.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <line/>
+    <tag k="road" v="powerline_major"/>
+    <inputSet ref="common"/>
+  </feature>
+
+  <feature name="Small powerline">
+    <category>roads</category>
+    <description>Contour line.</description>
+    <icon image="features/waterway__stream.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <line/>
+    <tag k="road" v="powerline"/>
+    <inputSet ref="common"/>
+  </feature>
+</featureGroup>

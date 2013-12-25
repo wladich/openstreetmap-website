@@ -16,6 +16,7 @@
 
   <include file="map_features/relief.xml" />
   <include file="map_features/landcover.xml" />
+  <include file="map_features/roads.xml" />
 
   
   <!-- Relations -->
@@ -40,6 +41,15 @@
 
   <inputSet id="common">
     <inputSet ref="source"/>
+  </inputSet>
+
+  <inputSet id="passability">
+    <input type="choice" presence="always" name="Passability" key="passability" priority="lowest">
+      <choice value="5" text="5"/>
+      <choice value="4" text="4"/>
+      <choice value="3" text="3"/>
+      <choice value="2" text="2"/>        
+    </input>
   </inputSet>
 
 </mapFeatures>
