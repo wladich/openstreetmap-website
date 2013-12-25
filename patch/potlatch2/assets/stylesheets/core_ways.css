@@ -35,8 +35,8 @@ way[passability=5]::pass {color: #fb7}
 
 way[road=dirt][!drive] { color: black; width: 1.5; dashes: 8, 8}
 way[road=dirt][drive]{color: black; width: 1.5;}
-way[road=advanced][drive] {color: white; width: 1.5; casing-color: #000}
-way[road=advanced][!drive] {color: white; width: 1.5; casing-color: brown}
+way[road=advanced][drive] {color: white; width: 1.5; casing-color: #000; casing-width: 2}
+way[road=advanced][!drive] {color: white; width: 1.5; casing-color: brown; casing-width: 2}
 way[road=cutting] { color: black; width: 1.5; dashes: 15, 5}
 way[road=abandoned] { color: black; width: 1.5; dashes: 6, 15}
 way[road=path] { color: black; width: 1.5; dashes: 4, 4}
