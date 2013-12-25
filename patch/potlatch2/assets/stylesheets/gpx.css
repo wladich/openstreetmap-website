@@ -4,7 +4,7 @@
 	
 */
 
-way { z-index: 2; width: 1; color: cyan; } 
+way { z-index: 2; width: 1; color: magenta; } 
 node :poi { z-index: 2; 
 			icon-image: circle; icon-width: 8; color: orange; 
 			casing-color: red; casing-width: 1; 
