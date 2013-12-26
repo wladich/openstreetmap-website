@@ -1,0 +1,158 @@
+<featureGroup>
+  <feature name="Triangulation tower">
+    <category>poi</category>
+    <icon image="features/pois/trig.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <point/>
+    <tag k="poi" v="trig"/>
+    <inputSet ref="common"/>
+  </feature>
+
+  <feature name="Memorial">
+    <category>poi</category>
+    <icon image="features/pois/pam.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <point/>
+    <tag k="poi" v="memorial"/>
+    <inputSet ref="common"/>
+  </feature>
+
+  <feature name="Church">
+    <category>poi</category>
+    <icon image="features/pois/cerkov.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <point/>
+    <tag k="poi" v="church"/>
+    <inputSet ref="common"/>
+  </feature>
+
+  <feature name="Store">
+    <category>poi</category>
+    <icon image="features/pois/shop.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <point/>
+    <tag k="poi" v="store"/>
+    <inputSet ref="common"/>
+  </feature>
+
+  <feature name="Bus stop">
+    <category>poi</category>
+    <icon image="features/pois/avt.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <point/>
+    <tag k="poi" v="bus_stop"/>
+    <inputSet ref="common"/>
+  </feature>
+
+  <feature name="Railway station">
+    <category>poi</category>
+    <icon image="features/pois/zd.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <point/>
+    <tag k="poi" v="railway_station"/>
+    <inputSet ref="common"/>
+  </feature>
+
+  <feature name="Building">
+    <category>poi</category>
+    <icon image="features/pois/dom.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <point/>
+    <tag k="poi" v="building"/>
+    <inputSet ref="common"/>
+  </feature>
+
+  <feature name="Cemetry">
+    <category>poi</category>
+    <icon image="features/pois/kladb.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <point/>
+    <tag k="poi" v="cemetry"/>
+    <inputSet ref="common"/>
+  </feature>
+
+  <feature name="Tower">
+    <category>poi</category>
+    <icon image="features/pois/bash.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <point/>
+    <tag k="poi" v="tower"/>
+    <inputSet ref="common"/>
+  </feature>
+
+<!--  <feature name="Spring">
+    <category>poi</category>
+    <icon image="features/pois/">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <point/>
+    <tag k="poi" v="spring"/>
+    <inputSet ref="common"/>
+  </feature>
+-->
+  <feature name="Ruins">
+    <category>poi</category>
+    <icon image="features/pois/razv.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <point/>
+    <tag k="poi" v="ruins"/>
+    <inputSet ref="common"/>
+  </feature>
+
+  <feature name="Hunting stand">
+    <category>poi</category>
+    <icon image="features/pois/ohotn.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <point/>
+    <tag k="poi" v="hunting"/>
+    <inputSet ref="common"/>
+  </feature>
+
+  <feature name="Mound">
+    <category>poi</category>
+    <icon image="features/pois/pupyr.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <point/>
+    <tag k="poi" v="mound"/>
+    <inputSet ref="common"/>
+  </feature>
+
+</featureGroup>
