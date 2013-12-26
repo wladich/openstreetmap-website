@@ -1,0 +1,17 @@
+node[poi=trig]     { icon-image: icons/trig.png; z-index: 20; }
+node[poi=memorial] { icon-image: icons/pam.png; z-index: 20; }
+node[poi=church]   { icon-image: icons/cerkov.png; z-index: 20; }
+node[poi=store]    { icon-image: icons/shop.png; z-index: 20; }
+node[poi=bus_stop] { icon-image: icons/avt.png; z-index: 20; }
+node[poi=railway_station] { icon-image: icons/zd.png; z-index: 20; }
+node[poi=building] { icon-image: icons/dom.png; z-index: 20; }
+node[poi=cemetry]  { icon-image: icons/kladb.png; z-index: 20; }
+node[poi=tower]    { icon-image: icons/bash.png; z-index: 20; }
+/*node[poi=spring]   { icon-image: icons/; z-index: 20; }*/
+node[poi=ruins]    { icon-image: icons/razv.png; z-index: 20; }
+node[poi=hunting]  { icon-image: icons/ohotn.png; z-index: 20; }
+node[poi=mound]    { icon-image: icons/pupyr.png; z-index: 20; }
+/*node[poi=pedestrain_tunel] { icon-image: icons/; z-index: 20; }
+node[poi=bridge]   { icon-image: icons/; z-index: 20; }
+node[poi=bridge][drive=yes]] { icon-image: icons/; z-index: 20; }
+*/
