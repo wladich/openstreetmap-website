@@ -36,9 +36,10 @@
 
   <inputSet id="source">
     <input type="choice" presence="always" name="Source" key="source" description="The primary source of information for this object (GPS, survey, Bing, ...)" priority="lowest">
-        <choice value="milmap" text="Genshatb map"/>
+        <choice value="gps" text="GPS track"/>
         <choice value="satellite" text="High resolution satellite"/>
-        <choice value="track" text="GPS track"/>
+        <choice value="genshtab" text="Soviet topo map"/>
+        <choice value="import:map_podm" text="Imported from map_podm"/>
     </input>
   </inputSet>
 
