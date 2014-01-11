@@ -1,0 +1,25 @@
+<featureGroup>
+  <feature name="Automobile bridge">
+    <category>bridges</category>
+    <icon image="features/waterway__stream.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <line/>
+    <tag k="bridge" v="automobile"/>
+    <inputSet ref="common"/>
+  </feature>
+
+  <feature name="Pedestrain bridge">
+    <category>bridges</category>
+    <icon image="features/waterway__stream.png">
+      <font size="14pt">
+        <b>${name}</b>
+      </font>
+    </icon>
+    <line/>
+    <tag k="bridge" v="pedestrain"/>
+    <inputSet ref="common"/>
+  </feature>
+</featureGroup>

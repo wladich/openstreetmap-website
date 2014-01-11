@@ -12,12 +12,14 @@
   <category name="Roads" id="roads"/> 
   <category name="POI" id="poi"/>  
   <category name="Relief" id="relief"/>
+  <category name="Bridges" id="bridges"/>
 <!-- Features -->
 
   <include file="map_features/relief.xml" />
   <include file="map_features/landcover.xml" />
   <include file="map_features/roads.xml" />
   <include file="map_features/pois.xml" />
+  <include file="map_features/bridges.xml" />
 
   
   <!-- Relations -->

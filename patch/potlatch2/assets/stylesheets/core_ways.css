@@ -43,3 +43,16 @@ way[road=path] { color: black; width: 1.5; dashes: 4, 4}
 way[road=trench] { color: brown; width: 1.5; dashes: 4, 4}
 way[road=wall] { color: brown; width: 1.5}
 way[road=wall]::dashes { color: brown; width: 4.5; dashes: 3, 6}
+
+way[bridge=automobile]::casing {color: black; width: 8}
+way[bridge=automobile]::inner {color: white; width: 4}
+
+way[bridge=pedestrain]::casing {color: black; width: 6}
+way[bridge=pedestrain]::inner {color: white; width: 2}
+
+/*
+way[poi=bridge] {color: #eb0; width: 1}
+way[poi=bridge]::dashes1 {color: #eb0; width: 3; dashes: 6, 2}
+way[poi=bridge]::dashes2 {color: #eb0; width: 5; dashes: 4, 4}
+way[poi=bridge]::dashes3 {color: #eb0; width: 7; dashes: 2, 6}
+*/
