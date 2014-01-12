@@ -1,0 +1,8 @@
+#!/bin/bash
+datestr=`date -Iseconds`
+dump_name=osm_full_dump-${datestr//:/.}
+su postgres -c "pg_dump -U postgres osm -Fc --data-only \
+--exclude-table countries \
+--exclude-table languages \
+--exclude-table schema_migrations" > $dump_name
+
