@@ -14,7 +14,7 @@ class CreateCountries < ActiveRecord::Migration
 
     add_index :countries, [:code], :name => "countries_code_idx", :unique => true
 
-    xml = REXML::Document.new(File.read(Rails.root.join("db/migrate/countryInfo.xml"))
+    xml = REXML::Document.new(File.read(Rails.root.join("db/migrate/countryInfo.xml")))
 
     xml.elements.each("geonames/country") do |ele|
       code = ele.get_text("countryCode").to_s
