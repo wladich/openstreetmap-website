@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <stylesheets>
-	<stylesheet>
-		<name>Potlatch</name>
-		<url>stylesheets/potlatch.css</url>
-	</stylesheet>
+    <stylesheet>
+        <name>Potlatch</name>
+        <url>stylesheets/potlatch.css</url>
+    </stylesheet>
+    <stylesheet>
+        <name>GPS</name>
+        <url>stylesheets/gpx.css</url>
+        <corestyle>no</corestyle>
+    </stylesheet>
+    <stylesheet>
+        <name>Bugs</name>
+        <url>stylesheets/bugs.css</url>
+        <corestyle>no</corestyle>
+    </stylesheet>
+
 </stylesheets>
